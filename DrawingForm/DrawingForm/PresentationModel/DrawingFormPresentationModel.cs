@@ -13,24 +13,21 @@ namespace DrawingForm
         public event PresentationModelChangedEventHandler _presentationModelChanged;
 
         private Model _model;
-        private State _state;
         private ShapeType _shapeType = ShapeType.Line; // 預設是 line
         private bool _isRectangleEnable = true;
         private bool _isLineEnable = true;
         private bool _isSixSideEnable = true;
-        private bool _isStateChange = false;
 
         // 初始化 model
         public DrawingFormPresentationModel(Model model)
         {
             _model = model;
-            _state = new PointerState(_model);
         }
 
         // 按下 shape button，notify observer
         public void ClickShapeButton(ShapeType shapeType)
         {
-            _state = new DrawingState(_model);
+            _model.SetModelState(StateType.Drawing);
             List<bool> buttonEnableStatus = new List<bool>()
             { 
                 true, true, true };
@@ -66,27 +63,20 @@ namespace DrawingForm
         // 處理按下指標的事件
         public void PressPointer(double left, double top)
         {
-            _state.PressPointer(_shapeType, left, top);
+            _model.PressPointer(_shapeType, left, top);
         }
 
         // 處理移動指標的事件
         public void MovePointer(double left, double top)
         {
-            _state.MovePointer(left, top);
+            _model.MovePointer(left, top);
         }
 
         // 處理放開指標的事件
         public void ReleasePointer(double left, double top)
         {
-            _isStateChange = IsStateChange();
-            _state.ReleasePointer(left, top);
+            _model.ReleasePointer(left, top);
             RefreshEnableStatus();
-        }
-
-        // 決定 state 狀態
-        private bool IsStateChange()
-        {
-            return _state.StateType == StateType.Drawing;
         }
 
         // 若是 DrawingState，改變 enable 狀態
@@ -102,24 +92,13 @@ namespace DrawingForm
         // 處理 paint 事件
         public void Draw(IGraphics graphics)
         {
-            _state.Draw(graphics);
-            if (_isStateChange)
-            {
-                _state = new PointerState(_model);
-                _isStateChange = false;
-            }
+            _model.Draw(graphics);
         }
 
         // 取得 select label 訊息
         public string GetSelectShapeInformation()
         {
-            string information = "";
-            Shape selectShape = _model.GetSelectShape();
-            if (_state.StateType == StateType.Pointer && selectShape != null)
-            {
-                information = selectShape.Information;
-            }
-            return information;
+            return _model.Information;
         }
 
         // _shapeType 的 getter & setter

@@ -12,69 +12,45 @@ namespace DrawingModel
         public delegate void ModelChangedEventHandler();
         public event ModelChangedEventHandler _modelChanged;
 
-        private Point _startPoint = new Point();
-        private bool _isPressed = false;
-        private List<Shape> _shapes = new List<Shape>();
-        private Shape _hint;
-
+        private State _state;
         private CommandManager _commandManager = new CommandManager();
-        private ShapeFactory _factory = new ShapeFactory();
-        private ShapeType _type;
+
+        private List<Shape> _shapes = new List<Shape>();
+
+        private bool _isDrawingStateOver = false;
+
+        // Constructor
+        public Model()
+        {
+            _state = new StateFactory().CreateState(StateType.Pointer, this, _shapes);
+        }
+
+        // 設定 state
+        public void SetModelState(StateType stateType)
+        {
+            _state = new StateFactory().CreateState(stateType, this, _shapes);
+        }
 
         // 按下指標，會設定起始點位置以及初始化 _hint
-        public void PressPointer(ShapeType type, double left, double top)
+        public void PressPointer(ShapeType shapeType, double left, double top)
         {
-            if (left > 0 && top > 0)
-            {
-                _type = type;
-                _startPoint.Left = left;
-                _startPoint.Top = top;
-                _hint = _factory.CreateShape(_type);
-                SetShapePoints(_hint, _startPoint, _startPoint);
-                _isPressed = true;
-                NotifyModelChanged();
-            }
+            _state.PressPointer(shapeType, left, top);
         }
 
         // 指標移動，若是有被按下，就改變 _hint 位置
         public void MovePointer(double left, double top)
         {
-            if (_isPressed)
-            {
-                SetShapePoints(_hint, _startPoint, new Point(left, top));
-                NotifyModelChanged();
-            }
+            _state.MovePointer(left, top);
         }
 
         // 放開指標，若是有被按下，加入 shape
-        public void ReleasePointerWithDrawingState(double left, double top)
+        public void ReleasePointer(double left, double top)
         {
-            if (_isPressed)
+            _state.ReleasePointer(_commandManager, left, top);
+            if (_state.StateType == StateType.Drawing)
             {
-                _isPressed = false;
-                Shape shape = _factory.CreateShape(_type);
-                SetShapePoints(shape, _startPoint, new Point(left, top));
-                ClearStartPoint();
-                _commandManager.Execute(new DrawCommand(this, shape));
-                NotifyModelChanged();
+                _isDrawingStateOver = true;
             }
-        }
-
-        // 放開指標
-        public void ReleasePointerWithPointerState(double left, double top)
-        {
-            if (_isPressed)
-            {
-                _isPressed = false;
-                NotifyModelChanged();
-            }
-        }
-
-        // 設定 point 的 startPoint 和 endPoint
-        private void SetShapePoints(Shape shape, Point startPoint, Point endPoint)
-        {
-            shape.SetStartPoint(startPoint.Left, startPoint.Top);
-            shape.SetEndPoint(endPoint.Left, endPoint.Top);
         }
 
         // 加入 shape
@@ -93,7 +69,6 @@ namespace DrawingModel
         // 清除 canvas
         public void Clear()
         {
-            _isPressed = false;
             _commandManager.Execute(new ClearCommand(this, _shapes));
             NotifyModelChanged();
         }
@@ -102,7 +77,6 @@ namespace DrawingModel
         public void Redo()
         {
             _commandManager.Redo();
-            ClearStartPoint();
             NotifyModelChanged();
         }
 
@@ -110,7 +84,6 @@ namespace DrawingModel
         public void Undo()
         {
             _commandManager.Undo();
-            ClearStartPoint();
             NotifyModelChanged();
         }
 
@@ -135,56 +108,31 @@ namespace DrawingModel
         // 在 canvas 上繪圖
         public void Draw(IGraphics graphics)
         {
-            RefreshShapes(graphics);
-            if (_isPressed)
+            _state.Draw(graphics);
+            if (_isDrawingStateOver)
             {
-                _hint.Draw(graphics);
-            }
-        }
-
-        // 標示外框
-        public void MarkOutlines(IGraphics graphics)
-        {
-            RefreshShapes(graphics);
-            Shape selectShape = GetSelectShape();
-            if (selectShape != null)
-            {
-                selectShape.MarkOutlines(graphics);
-            }
-        }
-
-        // 將所有 shape 重繪
-        private void RefreshShapes(IGraphics graphics)
-        {
-            graphics.ClearAll();
-            foreach (Shape shape in _shapes)
-            {
-                shape.Draw(graphics);
+                _state = new StateFactory().CreateState(StateType.Pointer, this, _shapes);
+                _isDrawingStateOver = false;
             }
         }
 
         // 尋找點擊到的 shape
         public Shape GetSelectShape()
         {
-            double left = _startPoint.Left;
-            double top = _startPoint.Top;
-            int shapeQuantity = _shapes.Count;
-            for (int order = shapeQuantity - 1; order >= 0; order--)
-            {
-                Shape shape = _shapes[order];
-                if (shape.IsPointInShape(new Point(left, top)))
-                {
-                    return shape;
-                }
-            }
-            return null;
+            return _state.GetSelectShape();
         }
 
-        // 重設 startPoint
-        private void ClearStartPoint()
+        // 返回 select shape 的 information
+        public string Information
         {
-            _startPoint.Top = -1;
-            _startPoint.Left = -1;
+            get
+            {
+                if (_state.StateType == StateType.Drawing && GetSelectShape() != null)
+                {
+                    return GetSelectShape().Information;
+                }
+                return "";
+            }
         }
 
         // observer
