@@ -1,0 +1,4 @@
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingModel\DrawingModel\bin\Debug\DrawingModel.dll
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingModel\Debug\DrawingModel.csproj.CoreCompileInputs.cache
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingModel\Debug\DrawingModel.csproj.CopyComplete
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingModel\Debug\DrawingModel.dll

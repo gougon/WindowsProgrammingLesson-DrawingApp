@@ -1,0 +1,5 @@
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingUITest\DrawingUITest\bin\Debug\DrawingUITest.dll
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingUITest\Debug\DrawingUITest.csprojAssemblyReference.cache
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingUITest\Debug\DrawingUITest.csproj.CoreCompileInputs.cache
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingUITest\Debug\DrawingUITest.csproj.CopyComplete
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingUITest\Debug\DrawingUITest.dll

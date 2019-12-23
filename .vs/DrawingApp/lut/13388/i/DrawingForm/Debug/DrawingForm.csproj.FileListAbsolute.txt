@@ -1,0 +1,9 @@
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingForm.exe.config
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingForm.exe
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingForm\Debug\DrawingForm.csprojAssemblyReference.cache
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingForm\Debug\DrawingForm.DrawingForm.resources
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingForm\Debug\DrawingForm.Properties.Resources.resources
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingForm\Debug\DrawingForm.csproj.GenerateResource.cache
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingForm\Debug\DrawingForm.csproj.CoreCompileInputs.cache
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingForm\Debug\DrawingForm.csproj.CopyComplete
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingForm\Debug\DrawingForm.exe

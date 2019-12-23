@@ -1,0 +1,11 @@
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingModel\DrawingModelTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingModel\DrawingModelTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingModel\DrawingModelTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingModel\DrawingModelTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingModel\DrawingModelTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingModel\DrawingModelTests\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\b\DrawingModel\DrawingModelTests\bin\Debug\DrawingModelTests.dll
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingModelTests\Debug\DrawingModelTests.csprojAssemblyReference.cache
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingModelTests\Debug\DrawingModelTests.csproj.CoreCompileInputs.cache
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingModelTests\Debug\DrawingModelTests.csproj.CopyComplete
+E:\Study\視窗程式設計(MVC)\hw6\DrawingApp\.vs\DrawingApp\lut\0\i\DrawingModelTests\Debug\DrawingModelTests.dll

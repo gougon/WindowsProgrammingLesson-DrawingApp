@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingModel", "DrawingModel\DrawingModel.csproj", "{143EF587-2DA2-464A-B4C7-9C683825A303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingModelTests", "DrawingModelTests\DrawingModelTests.csproj", "{1973E232-0AFF-4C0F-A8F0-80B3EA95D50C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{143EF587-2DA2-464A-B4C7-9C683825A303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143EF587-2DA2-464A-B4C7-9C683825A303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143EF587-2DA2-464A-B4C7-9C683825A303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143EF587-2DA2-464A-B4C7-9C683825A303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1973E232-0AFF-4C0F-A8F0-80B3EA95D50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1973E232-0AFF-4C0F-A8F0-80B3EA95D50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1973E232-0AFF-4C0F-A8F0-80B3EA95D50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1973E232-0AFF-4C0F-A8F0-80B3EA95D50C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4836AA74-F600-426B-BBE5-C0C05ECF2C6B}
+	EndGlobalSection
+EndGlobal
