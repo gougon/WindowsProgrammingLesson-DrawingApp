@@ -56,10 +56,7 @@
       <DependentUpon>DrawingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PresentationModel\DrawingFormPresentationModel.cs" />
-    <Compile Include="PresentationModel\State\DrawingState.cs" />
     <Compile Include="PresentationModel\FormGraphicsAdapter.cs" />
-    <Compile Include="PresentationModel\State\PointerState.cs" />
-    <Compile Include="PresentationModel\State\State.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DrawingForm.resx">

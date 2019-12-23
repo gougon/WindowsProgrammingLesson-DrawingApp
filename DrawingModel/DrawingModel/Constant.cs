@@ -18,6 +18,8 @@ namespace DrawingModel
         public const string SELECT_LABEL_TEXT = "Selected : ";
         public const string UNDO_ERROR_MESSAGE = "Cannot undo.";
         public const string REDO_ERROR_MESSAGE = "Cannot redo.";
+        public const string CREATE_STATE_ERROR_MESSAGE = "Unknown state type.";
+        public const string GET_SELECT_SHAPE_ERROR_MESSAGE = "Can't get select shape";
         public const int TWO = 2;
         public const int THREE = 3;
         public const int FOUR = 4;
