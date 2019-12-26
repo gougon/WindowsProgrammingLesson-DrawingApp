@@ -47,8 +47,8 @@ namespace DrawingModel
         // 重整 startPoint 和 endPoint
         public void ArrangePoints()
         {
-            if (_startPoint.GetSmallLeft(_endPoint) != _startPoint.Left ||
-                _startPoint.GetSmallTop(_endPoint) != _startPoint.Top)
+            if ((_startPoint.GetSmallLeft(_endPoint) != _startPoint.Left) !=
+                (_startPoint.GetSmallTop(_endPoint) != _startPoint.Top))
             {
                 _isReverse = true;
             }
@@ -92,6 +92,15 @@ namespace DrawingModel
                     return Constant.SIX_SIDE_TEXT;
             }
             return null;
+        }
+
+        // 取得 startPoint
+        public Point StartPoint
+        {
+            get
+            {
+                return _startPoint;
+            }
         }
 
         // 取得右上角 point
