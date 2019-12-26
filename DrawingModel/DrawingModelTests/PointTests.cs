@@ -53,6 +53,17 @@ namespace DrawingModel.Tests
             Assert.AreEqual(false, point.IsInRange(startPoint, endPoint));
         }
 
+        // 測試 IsInCircleRange
+        [TestMethod()]
+        public void IsInCircleRangeTest()
+        {
+            Point centerPoint = new Point(5, 5);
+            Assert.AreEqual(true, centerPoint.IsInCircleRange(Constant.MARK_CIRCLE_RADIUS, new Point(2, 2)));
+            Assert.AreEqual(false, centerPoint.IsInCircleRange(Constant.MARK_CIRCLE_RADIUS, new Point(1, 2)));
+            Assert.AreEqual(false, centerPoint.IsInCircleRange(Constant.MARK_CIRCLE_RADIUS, new Point(2, 1)));
+            Assert.AreEqual(false, centerPoint.IsInCircleRange(Constant.MARK_CIRCLE_RADIUS, new Point(1, 1)));
+        }
+
         // 測試 ArrangePoints
         [TestMethod()]
         public void ArrangePointsTest()

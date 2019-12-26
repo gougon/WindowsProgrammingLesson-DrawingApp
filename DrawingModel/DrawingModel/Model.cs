@@ -70,6 +70,7 @@ namespace DrawingModel
         public void Clear()
         {
             _commandManager.Execute(new ClearCommand(this, _shapes));
+            _state.Clear();
             NotifyModelChanged();
         }
 
@@ -77,6 +78,7 @@ namespace DrawingModel
         public void Redo()
         {
             _commandManager.Redo();
+            _state.Clear();
             NotifyModelChanged();
         }
 
@@ -84,6 +86,7 @@ namespace DrawingModel
         public void Undo()
         {
             _commandManager.Undo();
+            _state.Clear();
             NotifyModelChanged();
         }
 

@@ -113,6 +113,7 @@ namespace DrawingForm
             _selectLabel.Text = Constant.SELECT_LABEL_TEXT;
             _redoMenuItem.Enabled = _presentationModel.IsRedoEnable;
             _undoMenuItem.Enabled = _presentationModel.IsUndoEnable;
+            _selectLabel.Text = Constant.SELECT_LABEL_TEXT + _presentationModel.GetSelectShapeInformation();
             Invalidate(true);
         }
 
@@ -122,7 +123,6 @@ namespace DrawingForm
             _rectangleButton.Enabled = _presentationModel.IsRectangleEnable;
             _lineButton.Enabled = _presentationModel.IsLineEnable;
             _sixSideButton.Enabled = _presentationModel.IsSixSideEnable;
-            _selectLabel.Text = Constant.SELECT_LABEL_TEXT + _presentationModel.GetSelectShapeInformation();
         }
     }
 }

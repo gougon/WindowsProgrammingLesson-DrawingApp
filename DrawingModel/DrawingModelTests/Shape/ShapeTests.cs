@@ -51,6 +51,15 @@ namespace DrawingModel.Tests
             Assert.AreEqual(2, point.Top);
         }
 
+        // 測試 IsPointInResizeRange
+        [TestMethod()]
+        public void IsPointInResizeRangeTest()
+        {
+            _shape.SetEndPoint(5, 5);
+            Assert.AreEqual(true, _shape.IsPointInResizeRange(new Point(2, 2)));
+            Assert.AreEqual(false, _shape.IsPointInResizeRange(new Point(1, 1)));
+        }
+
         // 測試 Information
         [TestMethod()]
         public void InformationTest()

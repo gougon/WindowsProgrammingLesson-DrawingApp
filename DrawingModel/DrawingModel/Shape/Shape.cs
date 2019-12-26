@@ -43,19 +43,10 @@ namespace DrawingModel
             _endPoint = new Point(left, top);
         }
 
-        // 取得 ShapeType 對應的文字
-        private string GetShapeText(ShapeType shapeType)
+        // 判斷 point 有沒有在 shape 的右下角
+        public bool IsPointInResizeRange(Point point)
         {
-            switch (shapeType)
-            {
-                case ShapeType.Line:
-                    return Constant.LINE_TEXT;
-                case ShapeType.Rectangle:
-                    return Constant.RECTANGLE_TEXT;
-                case ShapeType.SixSide:
-                    return Constant.SIX_SIDE_TEXT;
-            }
-            return null;
+            return _endPoint.IsInCircleRange(Constant.MARK_CIRCLE_RADIUS, point);
         }
 
         // 取得 information
@@ -70,6 +61,21 @@ namespace DrawingModel
                 information += (this.Height + Constant.RIGHT_BRACKET);
                 return information;
             }
+        }
+
+        // 取得 ShapeType 對應的文字
+        private string GetShapeText(ShapeType shapeType)
+        {
+            switch (shapeType)
+            {
+                case ShapeType.Line:
+                    return Constant.LINE_TEXT;
+                case ShapeType.Rectangle:
+                    return Constant.RECTANGLE_TEXT;
+                case ShapeType.SixSide:
+                    return Constant.SIX_SIDE_TEXT;
+            }
+            return null;
         }
 
         // 取得 _shapeType

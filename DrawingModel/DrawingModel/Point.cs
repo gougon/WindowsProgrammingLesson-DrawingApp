@@ -41,6 +41,13 @@ namespace DrawingModel
                 _top >= top && _top <= top + height;
         }
 
+        // 判斷是否在一個 circle 的 range 內
+        public bool IsInCircleRange(int radius, Point point)
+        {
+            return GetLeftDifference(point) <= radius &&
+                GetTopDifference(point) <= radius;
+        }
+
         // 判斷是否比另一個 point 小
         public void ArrangePoints(ref Point endPoint)
         {

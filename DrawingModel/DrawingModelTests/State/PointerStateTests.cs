@@ -16,6 +16,7 @@ namespace DrawingModel.Tests
         State _state;
         bool _isNotify;
         PrivateObject _target;
+        PrivateObject _modelTarget;
         CommandManager _manager;
         Point _startPoint;
         bool _isPressed;
@@ -24,16 +25,12 @@ namespace DrawingModel.Tests
         [TestInitialize()]
         public void PointerStateTest()
         {
-            Shape shape = new ShapeFactory().CreateShape(ShapeType.Rectangle);
-            shape.SetStartPoint(5, 5);
-            shape.SetEndPoint(15, 15);
             _model = new Model();
-            _shapes = new List<Shape>();
-            _shapes.Add(shape);
+            _modelTarget = new PrivateObject(_model);
+            _shapes = (List<Shape>)_modelTarget.GetField("_shapes");
             _state = new PointerState(_model, _shapes);
             _target = new PrivateObject(_state);
-            PrivateObject _modelTarger = new PrivateObject(_model);
-            _manager = (CommandManager)_modelTarger.GetField("_commandManager");
+            _manager = (CommandManager)_modelTarget.GetField("_commandManager");
             _isNotify = false;
             _model._modelChanged += Notify;
             Assert.AreEqual(StateType.Pointer, _state.StateType);
@@ -48,6 +45,20 @@ namespace DrawingModel.Tests
             _isPressed = (bool)_target.GetField("_isPressed");
             Assert.AreEqual(true, _startPoint.IsEqual(new Point(10, 10)));
             Assert.AreEqual(true, _isPressed);
+        }
+
+        // 測試 MovePointer
+        [TestMethod()]
+        public void MovePointerTest()
+        {
+            AppendShapeIntoShapes();
+            _state.PressPointer(ShapeType.Rectangle, 13, 13);
+            _state.ReleasePointer(_manager, 13, 13);
+            _state.PressPointer(ShapeType.Rectangle, 16, 16);
+            _state.MovePointer(17, 17);
+            _shapes = (List<Shape>)_modelTarget.GetField("_shapes");
+            Assert.AreEqual(12, _shapes[0].Width);
+            Assert.AreEqual(12, _shapes[0].Height);
         }
 
         // 測試 ReleasePointer
@@ -71,13 +82,15 @@ namespace DrawingModel.Tests
             _state.Draw(new MockGraphics());
         }
 
-        // 測試 GetSelectShape
+        // 測試 SetSelectShape
         [TestMethod()]
-        public void GetSelectShapeTest()
+        public void SetSelectShapeTest()
         {
+            AppendShapeIntoShapes();
             _startPoint = (Point)_target.GetField("_startPoint");
             _startPoint.Left = 10;
             _startPoint.Top = 10;
+            _target.Invoke("SetSelectShape");
             Shape selectShape = _state.GetSelectShape();
             Assert.AreEqual(ShapeType.Rectangle, selectShape.ShapeType);
         }
@@ -86,6 +99,16 @@ namespace DrawingModel.Tests
         private void Notify()
         {
             _isNotify = true;
+        }
+
+        // 將 _shapes 加入一個 shape
+        private void AppendShapeIntoShapes()
+        {
+            Shape shape = new ShapeFactory().CreateShape(ShapeType.Rectangle);
+            shape.SetStartPoint(5, 5);
+            shape.SetEndPoint(15, 15);
+            _shapes = (List<Shape>)_modelTarget.GetField("_shapes");
+            _shapes.Add(shape);
         }
     }
 }
