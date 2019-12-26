@@ -26,7 +26,10 @@ namespace DrawingModel
                 _startPoint.Top = top;
                 _isPressed = true;
                 DetermineIsInResizeState(new Point(left, top));
-                SetSelectShape();
+                if (!_isInResizeState)
+                {
+                    SetSelectShape();
+                }
             }
         }
 
