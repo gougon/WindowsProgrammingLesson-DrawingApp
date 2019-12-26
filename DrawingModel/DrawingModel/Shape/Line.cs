@@ -19,12 +19,10 @@ namespace DrawingModel
             if (_isReverse)
             {
                 graphics.DrawLine(LowerLeftPoint, UpperRightPoint);
-                Console.WriteLine("reverse");
             }
             else
             {
                 graphics.DrawLine(_startPoint, _endPoint);
-                Console.WriteLine("not reverse");
             }
         }
 

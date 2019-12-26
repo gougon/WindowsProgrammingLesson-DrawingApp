@@ -85,7 +85,7 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/26 17:12:06.997</sourceFile>
+      <sourceFile>2019/12/26 20:35:07.861</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
@@ -96,7 +96,7 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/26 19:23:29.983</sourceFile>
+      <sourceFile>2019/12/27 00:53:30.449</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
@@ -118,7 +118,7 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/16 23:47:59.566</sourceFile>
+      <sourceFile>2019/12/27 00:54:25.037</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
@@ -140,7 +140,7 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/26 19:23:37.993</sourceFile>
+      <sourceFile>2019/12/27 00:54:45.944</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
@@ -173,7 +173,7 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/26 15:43:05.222</sourceFile>
+      <sourceFile>2019/12/27 00:43:09.249</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
@@ -184,24 +184,18 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/26 19:19:15.785</sourceFile>
+      <sourceFile>2019/12/27 00:50:51.785</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
     </timestamps>
-    <violations>
-      <violation namespace="StyleCop.CSharp.CsParser" rule="SyntaxException" ruleCheckId="SA0102">
-        <context>A syntax error has been discovered in file E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\State\PointerState.cs on line 43.</context>
-        <line>43</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
+    <violations />
   </sourcecode>
   <sourcecode name="State.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/24 00:22:59.535</sourceFile>
+      <sourceFile>2019/12/27 00:42:50.043</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>

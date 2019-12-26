@@ -15,7 +15,7 @@ namespace DrawingModel
 
     public abstract class Shape
     {
-        public bool _isReverse = false;
+        protected bool _isReverse = false;
         protected Point _startPoint;
         protected Point _endPoint;
         protected ShapeType _shapeType;
@@ -47,8 +47,7 @@ namespace DrawingModel
         // 重整 startPoint 和 endPoint
         public void ArrangePoints()
         {
-            if ((_startPoint.GetSmallLeft(_endPoint) != _startPoint.Left) !=
-                (_startPoint.GetSmallTop(_endPoint) != _startPoint.Top))
+            if (_startPoint.IsLeftExclusiveOrTopToPoint(_endPoint))
             {
                 _isReverse = true;
             }

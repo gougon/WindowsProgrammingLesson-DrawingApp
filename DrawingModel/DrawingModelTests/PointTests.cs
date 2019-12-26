@@ -91,6 +91,21 @@ namespace DrawingModel.Tests
             Assert.AreEqual(2, endPoint.Top);
         }
 
+        // 測試 IsLeftTopXorToPoint
+        [TestMethod()]
+        public void IsLeftTopXorToPointTest()
+        {
+            Point startPoint = new Point(2, 2);
+            Point endPoint = new Point(1, 1);
+            Assert.AreEqual(false, startPoint.IsLeftExclusiveOrTopToPoint(endPoint));
+            endPoint = new Point(2, 1);
+            Assert.AreEqual(true, startPoint.IsLeftExclusiveOrTopToPoint(endPoint));
+            endPoint = new Point(1, 2);
+            Assert.AreEqual(true, startPoint.IsLeftExclusiveOrTopToPoint(endPoint));
+            endPoint = new Point(2, 2);
+            Assert.AreEqual(false, startPoint.IsLeftExclusiveOrTopToPoint(endPoint));
+        }
+
         // 測試 GetBiggerLeft
         [TestMethod()]
         public void GetSmallerLeftTest()
