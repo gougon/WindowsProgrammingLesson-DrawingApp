@@ -66,8 +66,6 @@ namespace DrawingModel
         // resize
         private void ResizeShape(Shape resizeShape, Point cursorPoint)
         {
-            Console.WriteLine("cursor left = " +  cursorPoint.Left + ", top = " + cursorPoint.Top);
-            Console.WriteLine("start left = " + resizeShape.Left + ", top = " + resizeShape.Top);
             cursorPoint.Left = cursorPoint.IsLeftSmallThan(resizeShape.StartPoint) ? resizeShape.Left : cursorPoint.Left;
             cursorPoint.Top = cursorPoint.IsTopSmallThan(resizeShape.StartPoint) ? resizeShape.Top : cursorPoint.Top;
             resizeShape.SetEndPoint(cursorPoint.Left, cursorPoint.Top);

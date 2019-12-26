@@ -47,8 +47,8 @@ namespace DrawingModel
         // 重整 startPoint 和 endPoint
         public void ArrangePoints()
         {
-            if (_startPoint.GetSmallLeft(_endPoint) != _startPoint.Left ||
-                _startPoint.GetSmallTop(_endPoint) != _startPoint.Top)
+            if ((_startPoint.GetSmallLeft(_endPoint) != _startPoint.Left) !=
+                (_startPoint.GetSmallTop(_endPoint) != _startPoint.Top))
             {
                 _isReverse = true;
             }
