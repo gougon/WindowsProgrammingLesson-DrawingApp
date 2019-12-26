@@ -16,7 +16,7 @@ namespace DrawingModel
         // Constructor
         public DrawingState(Model model, List<Shape> shapes) : base(model, shapes)
         {
-            // do nothing
+            _stateType = StateType.Drawing;
         }
 
         // 處理按下指標事件

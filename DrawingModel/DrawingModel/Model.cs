@@ -127,7 +127,7 @@ namespace DrawingModel
         {
             get
             {
-                if (_state.StateType == StateType.Drawing && GetSelectShape() != null)
+                if (_state.StateType == StateType.Pointer && GetSelectShape() != null)
                 {
                     return GetSelectShape().Information;
                 }

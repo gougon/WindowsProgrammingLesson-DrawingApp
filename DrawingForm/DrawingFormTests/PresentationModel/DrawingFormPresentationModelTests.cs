@@ -104,17 +104,9 @@ namespace DrawingForm.Tests
             _presentationModel.ClickShapeButton(ShapeType.Line);
             _presentationModel.PressPointer(10, 5);
             _presentationModel.ReleasePointer(5, 10);
-            Assert.AreEqual(true, _target.Invoke("IsStateChange"));
             Assert.AreEqual(true, _presentationModel.IsLineEnable);
             Assert.AreEqual(true, _presentationModel.IsRectangleEnable);
             Assert.AreEqual(true, _presentationModel.IsSixSideEnable);
-        }
-
-        // 測試 IsStateChange
-        [TestMethod()]
-        public void IsStateChangeTest()
-        {
-            Assert.AreEqual(false, _target.Invoke("IsStateChange"));
         }
 
         // 測試 RefreshEnableStatus
@@ -132,11 +124,7 @@ namespace DrawingForm.Tests
         [TestMethod()]
         public void DrawTest()
         {
-            _presentationModel.ClickShapeButton(ShapeType.Line);
-            _presentationModel.PressPointer(10, 5);
-            _presentationModel.ReleasePointer(5, 10);
             _presentationModel.Draw(new MockGraphics());
-            Assert.AreEqual(false, _target.GetField("_isStateChange"));
         }
 
         // 測試 GetSelectShapeInformation

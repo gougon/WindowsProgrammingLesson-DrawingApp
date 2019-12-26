@@ -68,6 +68,9 @@
     <Compile Include="Shape\ShapeFactoryTests.cs" />
     <Compile Include="Shape\ShapeTests.cs" />
     <Compile Include="Shape\SixSideTests.cs" />
+    <Compile Include="State\DrawingStateTests.cs" />
+    <Compile Include="State\PointerStateTests.cs" />
+    <Compile Include="State\StateFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
