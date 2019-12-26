@@ -61,6 +61,18 @@ namespace DrawingModel
             endPoint.Top = top + height;
         }
 
+        // 判斷 left 有沒有比另外一個 point 小
+        public bool IsLeftSmallThan(Point point)
+        {
+            return _left < point._left;
+        }
+
+        // 判斷 top 有沒有比另外一個 point 小
+        public bool IsTopSmallThan(Point point)
+        {
+            return _top < point._top;
+        }
+
         // 取得較小的 left
         public double GetSmallLeft(Point point)
         {

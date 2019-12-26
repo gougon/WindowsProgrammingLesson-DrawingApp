@@ -94,6 +94,15 @@ namespace DrawingModel
             return null;
         }
 
+        // 取得 startPoint
+        public Point StartPoint
+        {
+            get
+            {
+                return _startPoint;
+            }
+        }
+
         // 取得右上角 point
         public Point UpperRightPoint
         {
