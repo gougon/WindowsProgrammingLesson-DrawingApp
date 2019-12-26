@@ -72,7 +72,10 @@ namespace DrawingModel
             if (_isPressed)
             {
                 _isPressed = false;
-                _isInResizeState = false;
+                if (_isInResizeState)
+                {
+                    _isInResizeState = false;
+                }
                 HandleModelChanged();
             }
         }

@@ -34,7 +34,6 @@ namespace DrawingForm
         // Implement DrawRectangle
         public void DrawRectangle(DrawingModel.Point startPoint, DrawingModel.Point endPoint)
         {
-            startPoint.ArrangePoints(ref endPoint);
             RectangleF rectangle = GetRectangle(startPoint, endPoint);
             _graphics.FillRectangle(new SolidBrush(Color.Yellow), rectangle);
             _graphics.DrawRectangle(Pens.Black, System.Drawing.Rectangle.Round(rectangle));

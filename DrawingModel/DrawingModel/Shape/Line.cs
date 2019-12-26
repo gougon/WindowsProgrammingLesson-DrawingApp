@@ -16,7 +16,16 @@ namespace DrawingModel
         // 實作 shape 的 Draw method
         public override void Draw(IGraphics graphics)
         {
-            graphics.DrawLine(_startPoint, _endPoint);
+            if (_isReverse)
+            {
+                graphics.DrawLine(LowerLeftPoint, UpperRightPoint);
+                Console.WriteLine("reverse");
+            }
+            else
+            {
+                graphics.DrawLine(_startPoint, _endPoint);
+                Console.WriteLine("not reverse");
+            }
         }
 
         // 實作 shape 的 IsPointInShape method
@@ -31,7 +40,15 @@ namespace DrawingModel
         // 計算點到職線的距離;
         private double GetPointToLine(Point point)
         {
-            double pointToLineDistance = point.GetPointToLineDistance(_startPoint, _endPoint);
+            double pointToLineDistance = 0;
+            if (_isReverse)
+            {
+                pointToLineDistance = point.GetPointToLineDistance(LowerLeftPoint, UpperRightPoint);
+            }
+            else
+            {
+                pointToLineDistance = point.GetPointToLineDistance(_startPoint, _endPoint);
+            }
             return Math.Abs(pointToLineDistance);
         }
     }
