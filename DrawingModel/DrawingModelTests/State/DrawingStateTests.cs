@@ -44,10 +44,17 @@ namespace DrawingModel.Tests
         [TestMethod()]
         public void PressPointerTest()
         {
+            _isPressed = (bool)_target.GetField("_isPressed");
+            _state.PressPointer(ShapeType.Line, 10, -10);
+            Assert.AreEqual(false, _isPressed);
+            _state.PressPointer(ShapeType.Line, -10, 10);
+            Assert.AreEqual(false, _isPressed);
+            _state.PressPointer(ShapeType.Line, -10, -10);
+            Assert.AreEqual(false, _isPressed);
             _state.PressPointer(ShapeType.Line, 10, 10);
             _startPoint = (Point)_target.GetField("_startPoint");
-            _isPressed = (bool)_target.GetField("_isPressed");
             _hint = (Shape)_target.GetField("_hint");
+            _isPressed = (bool)_target.GetField("_isPressed");
             Assert.AreEqual(true, _startPoint.IsEqual(new Point(10, 10)));
             Assert.AreEqual(ShapeType.Line, _hint.ShapeType);
             Assert.AreEqual(true, _isPressed);
@@ -96,7 +103,15 @@ namespace DrawingModel.Tests
         public void DrawTest()
         {
             _shapes = (List<Shape>)_modelTarget.GetField("_shapes");
+            _state.PressPointer(ShapeType.Line, 10, 10);
             _state.Draw(new MockGraphics());
+        }
+
+        // 測試 GetSelectShape
+        [TestMethod()]
+        public void GetSelectShapeTest()
+        {
+            Assert.AreEqual(null, _state.GetSelectShape());
         }
 
         // mock notify
