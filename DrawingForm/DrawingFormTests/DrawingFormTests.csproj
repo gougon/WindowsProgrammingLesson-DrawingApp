@@ -58,8 +58,6 @@
   <ItemGroup>
     <Compile Include="MockGraphics.cs" />
     <Compile Include="PresentationModel\DrawingFormPresentationModelTests.cs" />
-    <Compile Include="PresentationModel\State\DrawingStateTests.cs" />
-    <Compile Include="PresentationModel\State\PointerStateTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

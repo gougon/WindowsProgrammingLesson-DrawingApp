@@ -1,0 +1,6 @@
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingUITest\DrawingUITest\bin\Debug\DrawingUITest.dll
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingUITest\DrawingUITest\bin\Debug\DrawingUITest.pdb
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingUITest\DrawingUITest\obj\Debug\DrawingUITest.csprojAssemblyReference.cache
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingUITest\DrawingUITest\obj\Debug\DrawingUITest.csproj.CoreCompileInputs.cache
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingUITest\DrawingUITest\obj\Debug\DrawingUITest.dll
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingUITest\DrawingUITest\obj\Debug\DrawingUITest.pdb

@@ -11,7 +11,7 @@ namespace DrawingModel
         // Constructor
         public PointerState(Model model, List<Shape> shapes) : base(model, shapes)
         {
-            // do nothing
+            _stateType = StateType.Pointer;
         }
 
         // 處理按下指標事件
