@@ -1,0 +1,2 @@
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingFormTests\obj\Debug\DrawingFormTests.csprojAssemblyReference.cache
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingFormTests\obj\Debug\DrawingFormTests.csproj.CoreCompileInputs.cache
