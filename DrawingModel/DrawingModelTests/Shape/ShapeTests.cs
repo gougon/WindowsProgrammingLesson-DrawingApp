@@ -67,6 +67,14 @@ namespace DrawingModel.Tests
             _shape.SetStartPoint(1, 1);
             _shape.SetEndPoint(10, 10);
             Assert.AreEqual("Line (1, 1, 9, 9)", _shape.Information);
+            _shape = new ShapeFactory().CreateShape(ShapeType.Rectangle);
+            _shape.SetStartPoint(1, 1);
+            _shape.SetEndPoint(10, 10);
+            Assert.AreEqual("Rectangle (1, 1, 9, 9)", _shape.Information);
+            _shape = new ShapeFactory().CreateShape(ShapeType.SixSide);
+            _shape.SetStartPoint(1, 1);
+            _shape.SetEndPoint(10, 10);
+            Assert.AreEqual("Hexagon (1, 1, 9, 9)", _shape.Information);
         }
 
         // 測試 Height

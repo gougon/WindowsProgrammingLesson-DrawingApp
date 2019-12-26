@@ -88,10 +88,9 @@ namespace DrawingModel
                     return Constant.LINE_TEXT;
                 case ShapeType.Rectangle:
                     return Constant.RECTANGLE_TEXT;
-                case ShapeType.SixSide:
+                default:
                     return Constant.SIX_SIDE_TEXT;
             }
-            return null;
         }
 
         // 取得 startPoint
