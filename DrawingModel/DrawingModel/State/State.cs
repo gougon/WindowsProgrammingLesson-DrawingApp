@@ -42,6 +42,9 @@ namespace DrawingModel
         // 尋找 select shape
         public abstract Shape GetSelectShape();
 
+        // 清空所有狀態
+        public abstract void Clear();
+
         // 將所有 shape 重繪
         protected void RefreshShapes(IGraphics graphics)
         {

@@ -80,5 +80,12 @@ namespace DrawingModel
         {
             return null;
         }
+
+        // override clear
+        public override void Clear()
+        {
+            _startPoint.Left = -1;
+            _startPoint.Top = -1;
+        }
     }
 }

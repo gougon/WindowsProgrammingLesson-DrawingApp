@@ -9,6 +9,9 @@
   <project key="-1001651854">
     <configuration>DEBUG;TRACE</configuration>
   </project>
+  <project key="1468879603">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
   <sourcecode name="MainUITest.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
