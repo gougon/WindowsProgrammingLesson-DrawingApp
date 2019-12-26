@@ -15,6 +15,7 @@ namespace DrawingModel
 
     public abstract class Shape
     {
+        public bool _isReverse = false;
         protected Point _startPoint;
         protected Point _endPoint;
         protected ShapeType _shapeType;
@@ -43,10 +44,25 @@ namespace DrawingModel
             _endPoint = new Point(left, top);
         }
 
+        // 重整 startPoint 和 endPoint
+        public void ArrangePoints()
+        {
+            if (_startPoint.GetSmallLeft(_endPoint) != _startPoint.Left ||
+                _startPoint.GetSmallTop(_endPoint) != _startPoint.Top)
+            {
+                _isReverse = true;
+            }
+            else
+            {
+                _isReverse = false;
+            }
+            _startPoint.ArrangePoints(ref _endPoint);
+        }
+
         // 判斷 point 有沒有在 shape 的右下角
         public bool IsPointInResizeRange(Point point)
         {
-            return _endPoint.IsInCircleRange(Constant.MARK_CIRCLE_RADIUS, point);
+            return LowerRightPoint.IsInCircleRange(Constant.MARK_CIRCLE_RADIUS, point);
         }
 
         // 取得 information
@@ -55,10 +71,10 @@ namespace DrawingModel
             get
             {
                 string information = (GetShapeText(this.ShapeType) + Constant.SPACE + Constant.LEFT_BRACKET);
-                information += (this.Left + Constant.COMMA + Constant.SPACE);
-                information += (this.Top + Constant.COMMA + Constant.SPACE);
-                information += (this.Width + Constant.COMMA + Constant.SPACE);
-                information += (this.Height + Constant.RIGHT_BRACKET);
+                information += (UpperLeftPoint.Left + Constant.COMMA + Constant.SPACE);
+                information += (UpperLeftPoint.Top + Constant.COMMA + Constant.SPACE);
+                information += (UpperLeftPoint.GetLeftDifference(LowerRightPoint) + Constant.COMMA + Constant.SPACE);
+                information += (UpperLeftPoint.GetTopDifference(LowerRightPoint) + Constant.RIGHT_BRACKET);
                 return information;
             }
         }
@@ -76,6 +92,50 @@ namespace DrawingModel
                     return Constant.SIX_SIDE_TEXT;
             }
             return null;
+        }
+
+        // 取得右上角 point
+        public Point UpperRightPoint
+        {
+            get
+            {
+                double left = _startPoint.GetBigLeft(_endPoint);
+                double top = _startPoint.GetSmallTop(_endPoint);
+                return new Point(left, top);
+            }
+        }
+
+        // 取得右下角 point
+        public Point LowerRightPoint
+        {
+            get
+            {
+                double left = _startPoint.GetBigLeft(_endPoint);
+                double top = _startPoint.GetBigTop(_endPoint);
+                return new Point(left, top);
+            }
+        }
+
+        // 取得左上角 point
+        public Point UpperLeftPoint
+        {
+            get
+            {
+                double left = _startPoint.GetSmallLeft(_endPoint);
+                double top = _startPoint.GetSmallTop(_endPoint);
+                return new Point(left, top);
+            }
+        }
+
+        // 取得左下角 point
+        public Point LowerLeftPoint
+        {
+            get
+            {
+                double left = _startPoint.GetSmallLeft(_endPoint);
+                double top = _startPoint.GetBigTop(_endPoint);
+                return new Point(left, top);
+            }
         }
 
         // 取得 _shapeType

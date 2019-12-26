@@ -50,7 +50,9 @@ namespace DrawingModel
             {
                 _isPressed = false;
                 Shape shape = _shapeFactory.CreateShape(_type);
-                SetShapePoints(shape, _startPoint, new Point(left, top));
+                Point endPoint = new Point(left, top);
+                SetShapePoints(shape, _startPoint, endPoint);
+                shape.ArrangePoints();
                 _startPoint.Left = -1;
                 _startPoint.Top = -1;
                 commandManager.Execute(new DrawCommand(_model, shape));
@@ -61,6 +63,7 @@ namespace DrawingModel
         // 設定 point 的 startPoint 和 endPoint
         private void SetShapePoints(Shape shape, Point startPoint, Point endPoint)
         {
+            
             shape.SetStartPoint(startPoint.Left, startPoint.Top);
             shape.SetEndPoint(endPoint.Left, endPoint.Top);
         }

@@ -48,7 +48,7 @@ namespace DrawingModel
                 GetTopDifference(point) <= radius;
         }
 
-        // 判斷是否比另一個 point 小
+        // 與 endPoint 相比，將位置重整
         public void ArrangePoints(ref Point endPoint)
         {
             float left = (float)GetSmallLeft(endPoint);
