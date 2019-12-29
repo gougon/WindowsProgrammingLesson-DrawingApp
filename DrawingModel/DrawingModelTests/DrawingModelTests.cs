@@ -157,6 +157,7 @@ namespace DrawingModel.Tests
         [TestMethod()]
         public void DrawTest()
         {
+            _model.SetModelState(StateType.Drawing);
             _model.PressPointer(ShapeType.Line, 1, 1);
             _model.ReleasePointer(1, 2);
             _model.PressPointer(ShapeType.SixSide, 1, 1);
@@ -180,6 +181,20 @@ namespace DrawingModel.Tests
         public void GetSelectShapeWhenNotHasShapeTest()
         {
             Assert.AreEqual(null, _model.GetSelectShape());
+        }
+
+        // 測試 Information
+        [TestMethod()]
+        public void InformationTest()
+        {
+            Assert.AreEqual("", _model.Information);
+            _model.SetModelState(StateType.Drawing);
+            _model.PressPointer(ShapeType.Rectangle, 1, 1);
+            _model.ReleasePointer(10, 10);
+            Assert.AreEqual("", _model.Information);
+            _model.SetModelState(StateType.Pointer);
+            _model.PressPointer(ShapeType.Line, 2, 2);
+            Assert.AreEqual("Rectangle (1, 1, 9, 9)", _model.Information);
         }
 
         // 測試 observer

@@ -71,6 +71,7 @@
     <Compile Include="State\DrawingStateTests.cs" />
     <Compile Include="State\PointerStateTests.cs" />
     <Compile Include="State\StateFactoryTests.cs" />
+    <Compile Include="State\StateTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
