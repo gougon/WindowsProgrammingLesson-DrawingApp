@@ -77,6 +77,14 @@ namespace DrawingModel.Tests
             Assert.AreEqual("Hexagon (1, 1, 9, 9)", _shape.Information);
         }
 
+        // 測試 StartPoint
+        [TestMethod()]
+        public void StartPointTest()
+        {
+            _shape.SetStartPoint(1, 2);
+            Assert.AreEqual(true, _shape.StartPoint.IsEqual(new Point(1, 2)));
+        }
+
         // 測試 Height
         [TestMethod()]
         public void HeightTest()
