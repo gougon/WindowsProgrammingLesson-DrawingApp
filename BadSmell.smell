@@ -188,53 +188,6 @@
           <Reviews>
             <Smell>
               <Id>1</Id>
-              <SmellType>A syntax error has been discovered in file E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\State\PointerState.cs on line 43.</SmellType>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingModel</Project>
-              <File>PointerState.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>2</Id>
-              <SmellType>Unresolved warnings(忽視警告)-運算式詞彙 '}' 無效</SmellType>
-              <HashCode>DrawingModel\DrawingModel\DrawingModel.PointerState.cs.Unresolved warnings(忽視警告)-運算式詞彙 '}' 無效.43</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingModel\DrawingModel\DrawingModel</Project>
-              <File>PointerState.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>3</Id>
-              <SmellType>Unresolved warnings(忽視警告)-必須是 ;</SmellType>
-              <HashCode>DrawingModel\DrawingModel\DrawingModel.PointerState.cs.Unresolved warnings(忽視警告)-必須是 ;.43</HashCode>
-              <Severity>Red</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingModel\DrawingModel\DrawingModel</Project>
-              <File>PointerState.cs</File>
-              <Line>43</Line>
-              <StartLine>0</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>0</EndLine>
-              <EndCol>0</EndCol>
-              <Comment />
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>4</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>54 DrawingApp.MainPage.UnloadObject(Windows.UI.Xaml.DependencyObject)</HashCode>
               <Severity>Red</Severity>
@@ -250,7 +203,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>5</Id>
+              <Id>2</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>129 DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByType(System.Type)</HashCode>
               <Severity>Red</Severity>
@@ -266,7 +219,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>6</Id>
+              <Id>3</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>134 DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByName(string)</HashCode>
               <Severity>Red</Severity>
@@ -282,7 +235,7 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>7</Id>
+              <Id>4</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>20 DrawingApp.Program.Main(string[])</HashCode>
               <Severity>Red</Severity>
@@ -295,22 +248,6 @@
               <EndLine>0</EndLine>
               <EndCol>0</EndCol>
               <Comment>DrawingApp.Program.Main(string[])</Comment>
-              <Auto>false</Auto>
-            </Smell>
-            <Smell>
-              <Id>8</Id>
-              <SmellType>Feature Envy(依戀情節)</SmellType>
-              <HashCode>35 目前物件 DrawingModel.PointerState，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.State，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.State.HandleModelChanged() 以及 DrawingModel.State._isPressed</HashCode>
-              <Severity>Warning</Severity>
-              <Weight>1</Weight>
-              <Project>DrawingModel</Project>
-              <File>E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\State\PointerState.cs</File>
-              <Line>35</Line>
-              <StartLine>34</StartLine>
-              <StartCol>0</StartCol>
-              <EndLine>35</EndLine>
-              <EndCol>0</EndCol>
-              <Comment>目前物件 DrawingModel.PointerState，使用物件的方法或屬性次數：0次，Envy到對象物件 DrawingModel.State，使用物件方法或屬性次數：2次，使用到的方法或屬性為以下：DrawingModel.State.HandleModelChanged() 以及 DrawingModel.State._isPressed</Comment>
               <Auto>false</Auto>
             </Smell>
           </Reviews>
@@ -670,8 +607,8 @@
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>3360</ProductionLoc>
-          <TestLoc>1991</TestLoc>
+          <ProductionLoc>3635</ProductionLoc>
+          <TestLoc>2096</TestLoc>
         </CodeReview>
       </Data>
     </div>

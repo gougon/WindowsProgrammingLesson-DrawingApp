@@ -91,9 +91,42 @@ namespace DrawingModel.Tests
             Assert.AreEqual(2, endPoint.Top);
         }
 
+        // 測試 IsLeftTopXorToPoint
+        [TestMethod()]
+        public void IsLeftTopXorToPointTest()
+        {
+            Point startPoint = new Point(2, 2);
+            Point endPoint = new Point(1, 1);
+            Assert.AreEqual(false, startPoint.IsLeftExclusiveOrTopToPoint(endPoint));
+            endPoint = new Point(2, 1);
+            Assert.AreEqual(true, startPoint.IsLeftExclusiveOrTopToPoint(endPoint));
+            endPoint = new Point(1, 2);
+            Assert.AreEqual(true, startPoint.IsLeftExclusiveOrTopToPoint(endPoint));
+            endPoint = new Point(2, 2);
+            Assert.AreEqual(false, startPoint.IsLeftExclusiveOrTopToPoint(endPoint));
+        }
+
+        // 測試 IsLeftSmallThan
+        [TestMethod()]
+        public void IsLeftSmallThanTest()
+        {
+            Point startPoint = new Point(1, 2);
+            Point endPoint = new Point(2, 1);
+            Assert.AreEqual(true, startPoint.IsLeftSmallThan(endPoint));
+        }
+
+        // 測試 IsTopSmallThan
+        [TestMethod()]
+        public void IsTopSmallThanTest()
+        {
+            Point startPoint = new Point(2, 1);
+            Point endPoint = new Point(1, 2);
+            Assert.AreEqual(true, startPoint.IsTopSmallThan(endPoint));
+        }
+
         // 測試 GetBiggerLeft
         [TestMethod()]
-        public void GetSmallerLeftTest()
+        public void GetSmallLeftTest()
         {
             Point point1 = new Point(1.1, 2.2);
             Point point2 = new Point(3.3, 0);
@@ -103,7 +136,7 @@ namespace DrawingModel.Tests
 
         // 測試 GetSmallerTop
         [TestMethod()]
-        public void GetSmallerTopTest()
+        public void GetSmallTopTest()
         {
             Point point1 = new Point(1.1, 2.2);
             Point point2 = new Point(3.3, 0);
@@ -113,7 +146,7 @@ namespace DrawingModel.Tests
 
         // 測試 GetBiggerLeft
         [TestMethod()]
-        public void GetBiggerLeftTest()
+        public void GetBigLeftTest()
         {
             Point point1 = new Point(1.1, 2.2);
             Point point2 = new Point(3.3, 0);
@@ -123,7 +156,7 @@ namespace DrawingModel.Tests
 
         // 測試 GetBiggerTop
         [TestMethod()]
-        public void GetBiggerTopTest()
+        public void GetBigTopTest()
         {
             Point point1 = new Point(1.1, 2.2);
             Point point2 = new Point(3.3, 0);

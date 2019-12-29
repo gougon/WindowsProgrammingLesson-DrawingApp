@@ -66,9 +66,26 @@ namespace DrawingModel
         // resize
         private void ResizeShape(Shape resizeShape, Point cursorPoint)
         {
-            cursorPoint.Left = cursorPoint.IsLeftSmallThan(resizeShape.StartPoint) ? resizeShape.Left : cursorPoint.Left;
-            cursorPoint.Top = cursorPoint.IsTopSmallThan(resizeShape.StartPoint) ? resizeShape.Top : cursorPoint.Top;
+            double resizeLeft = resizeShape.Left;
+            double resizeTop = resizeShape.Top;
+            double cursorLeft = cursorPoint.Left;
+            double cursorTop = cursorPoint.Top;
+            cursorPoint.Left = GetCursorPointData(resizeLeft, cursorLeft);
+            cursorPoint.Top = GetCursorPointData(resizeTop, cursorTop);
             resizeShape.SetEndPoint(cursorPoint.Left, cursorPoint.Top);
+        }
+
+        // 取得 cursor point left
+        private double GetCursorPointData(double resizeData, double cursorData)
+        {
+            if (resizeData < cursorData)
+            {
+                return cursorData;
+            }
+            else
+            {
+                return resizeData;
+            }
         }
 
         // 處理放開指標事件
@@ -131,6 +148,12 @@ namespace DrawingModel
             _startPoint.Left = -1;
             _startPoint.Top = -1;
             _selectShape = null;
+        }
+
+        // observer model changed
+        public void HandleModelChanged()
+        {
+            _model.NotifyModelChanged();
         }
     }
 }

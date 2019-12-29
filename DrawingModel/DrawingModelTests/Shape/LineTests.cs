@@ -23,10 +23,20 @@ namespace DrawingModel.Tests
             _line.SetEndPoint(100, 100);
         }
 
-        // 測試 Draw
+        // 測試 not reverse 的 line 的 Draw
         [TestMethod()]
-        public void DrawTest()
+        public void DrawWithNotReverseTest()
         {
+            _line.Draw(new MockGraphics());
+        }
+
+        // 測試有 reverse 的 line 的 Draw
+        [TestMethod()]
+        public void DrawWithReverseTest()
+        {
+            _line.SetStartPoint(0, 10);
+            _line.SetEndPoint(10, 0);
+            _line.ArrangePoints();
             _line.Draw(new MockGraphics());
         }
 
@@ -42,10 +52,22 @@ namespace DrawingModel.Tests
             Assert.AreEqual(false, _line.IsPointInShape(point));
         }
 
-        // 測試 GetPointToLine
+        // 測試 GetPointToLine 在沒有 reverse 的狀態
         [TestMethod()]
-        public void GetPointToLineTest()
+        public void GetPointToLineWithNotReverseTest()
         {
+            Point point = new Point(5, 5);
+            PrivateObject target = new PrivateObject(_line);
+            Assert.AreEqual((double)0, target.Invoke("GetPointToLine", point));
+        }
+
+        // 測試 GetPointToLine 在有 reverse 的狀態
+        [TestMethod()]
+        public void GetPointToLineWithReverseTest()
+        {
+            _line.SetStartPoint(0, 10);
+            _line.SetEndPoint(10, 0);
+            _line.ArrangePoints();
             Point point = new Point(5, 5);
             PrivateObject target = new PrivateObject(_line);
             Assert.AreEqual((double)0, target.Invoke("GetPointToLine", point));

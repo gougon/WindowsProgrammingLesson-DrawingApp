@@ -90,5 +90,11 @@ namespace DrawingModel
             _startPoint.Left = -1;
             _startPoint.Top = -1;
         }
+
+        // observer model changed
+        public void HandleModelChanged()
+        {
+            _model.NotifyModelChanged();
+        }
     }
 }

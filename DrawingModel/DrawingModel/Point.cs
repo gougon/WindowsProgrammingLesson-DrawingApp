@@ -41,6 +41,13 @@ namespace DrawingModel
                 _top >= top && _top <= top + height;
         }
 
+        // 判斷是否為 left or top 其中一個小於另外一點
+        public bool IsLeftExclusiveOrTopToPoint(Point point)
+        {
+            return (GetSmallLeft(point) != _left) !=
+                (GetSmallTop(point) != _top);
+        }
+
         // 判斷是否在一個 circle 的 range 內
         public bool IsInCircleRange(int radius, Point point)
         {

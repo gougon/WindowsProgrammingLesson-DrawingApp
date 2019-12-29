@@ -63,11 +63,5 @@ namespace DrawingModel
                 return _stateType;
             }
         }
-
-        // observer model changed
-        public void HandleModelChanged()
-        {
-            _model.NotifyModelChanged();
-        }
     }
 }

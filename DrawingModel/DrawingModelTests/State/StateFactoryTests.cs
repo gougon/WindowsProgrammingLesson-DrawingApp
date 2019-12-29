@@ -11,20 +11,28 @@ namespace DrawingModel.Tests
     [TestClass()]
     public class StateFactoryTests
     {
-        ShapeFactory _shapeFactory = new ShapeFactory();
+        StateFactory _stateFactory = new StateFactory();
+        Model _model = new Model();
+        List<Shape> _shapes = new List<Shape>();
 
         // 測試 createState
         [TestMethod()]
         public void CreateStateTest()
         {
-            Shape shape = _shapeFactory.CreateShape(ShapeType.Line);
-            Assert.AreEqual(ShapeType.Line, shape.ShapeType);
+            State state = _stateFactory.CreateState(StateType.Pointer, _model, _shapes);
+            Assert.AreEqual(StateType.Pointer, state.StateType);
 
-            shape = _shapeFactory.CreateShape(ShapeType.Rectangle);
-            Assert.AreEqual(ShapeType.Rectangle, shape.ShapeType);
+            state = _stateFactory.CreateState(StateType.Drawing, _model, _shapes);
+            Assert.AreEqual(StateType.Drawing, state.StateType);
+        }
 
-            shape = _shapeFactory.CreateShape(ShapeType.SixSide);
-            Assert.AreEqual(ShapeType.SixSide, shape.ShapeType);
+        // 測試 shapetype 錯誤的 createState
+        [ExpectedException(typeof(Exception))]
+        [TestMethod()]
+        public void CreateStateWithWrongShapeType()
+        {
+            State state = _stateFactory.CreateState((StateType)5, _model, _shapes);
+            Assert.AreEqual(StateType.Drawing, state.StateType);
         }
     }
 }
