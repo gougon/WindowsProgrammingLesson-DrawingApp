@@ -27976,11 +27976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Study\\WindowsProgrammingLesson-DrawingApp\\DrawingApp\\DrawingApp.csproj",
+      "projectUniqueName": "E:\\Study\\視窗程式設計(MVC)\\WindowsProgrammingLesson-DrawingApp\\DrawingApp\\DrawingApp.csproj",
       "projectName": "DrawingApp",
-      "projectPath": "E:\\Study\\WindowsProgrammingLesson-DrawingApp\\DrawingApp\\DrawingApp.csproj",
+      "projectPath": "E:\\Study\\視窗程式設計(MVC)\\WindowsProgrammingLesson-DrawingApp\\DrawingApp\\DrawingApp.csproj",
       "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-      "outputPath": "E:\\Study\\WindowsProgrammingLesson-DrawingApp\\DrawingApp\\obj\\",
+      "outputPath": "E:\\Study\\視窗程式設計(MVC)\\WindowsProgrammingLesson-DrawingApp\\DrawingApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

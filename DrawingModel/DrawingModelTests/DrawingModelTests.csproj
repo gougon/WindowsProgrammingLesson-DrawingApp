@@ -59,6 +59,7 @@
     <Compile Include="Command\ClearCommandTests.cs" />
     <Compile Include="Command\CommandManagerTests.cs" />
     <Compile Include="Command\DrawCommandTests.cs" />
+    <Compile Include="Command\ResizeCommandTests.cs" />
     <Compile Include="DrawingModelTests.cs" />
     <Compile Include="MockGraphics.cs" />
     <Compile Include="PointTests.cs" />
