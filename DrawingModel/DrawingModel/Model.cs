@@ -90,6 +90,31 @@ namespace DrawingModel
             NotifyModelChanged();
         }
 
+        // resize
+        public void Resize(Shape resizeShape, Point cursorPoint)
+        {
+            double resizeLeft = resizeShape.Left;
+            double resizeTop = resizeShape.Top;
+            double cursorLeft = cursorPoint.Left;
+            double cursorTop = cursorPoint.Top;
+            cursorPoint.Left = GetCursorPointData(resizeLeft, cursorLeft);
+            cursorPoint.Top = GetCursorPointData(resizeTop, cursorTop);
+            resizeShape.SetEndPoint(cursorPoint.Left, cursorPoint.Top);
+        }
+
+        // 取得 cursor point left
+        private double GetCursorPointData(double resizeData, double cursorData)
+        {
+            if (resizeData < cursorData)
+            {
+                return cursorData;
+            }
+            else
+            {
+                return resizeData;
+            }
+        }
+
         // Is Redo enable
         public bool IsRedoEnable
         {

@@ -101,6 +101,15 @@ namespace DrawingModel
             }
         }
 
+        // 取得 endPoint
+        public Point EndPoint
+        {
+            get
+            {
+                return _endPoint;
+            }
+        }
+
         // 取得右上角 point
         public Point UpperRightPoint
         {

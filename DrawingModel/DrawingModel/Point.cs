@@ -163,5 +163,14 @@ namespace DrawingModel
                 return _top;
             }
         }
+
+        // clone
+        public Point Clone
+        {
+            get
+            {
+                return new Point(_left, _top);
+            }
+        }
     }
 }

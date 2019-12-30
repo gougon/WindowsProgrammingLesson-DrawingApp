@@ -4,3 +4,9 @@ E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingMode
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\obj\Debug\DrawingModel.csproj.CoreCompileInputs.cache
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\obj\Debug\DrawingModel.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\obj\Debug\DrawingModel.pdb
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\obj\Debug\DrawingModel.csprojAssemblyReference.cache
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\obj\Debug\DrawingModel.csproj.CoreCompileInputs.cache
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\obj\Debug\DrawingModel.dll
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\obj\Debug\DrawingModel.pdb
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\DrawingModel.dll
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\DrawingModel.pdb
