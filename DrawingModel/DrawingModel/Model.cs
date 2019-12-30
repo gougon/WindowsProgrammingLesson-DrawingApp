@@ -102,6 +102,25 @@ namespace DrawingModel
             resizeShape.SetEndPoint(cursorPoint.Left, cursorPoint.Top);
         }
 
+        // save
+        public void Save()
+        {
+            string text = new ShapesConverter(_shapes).Text;
+            string currentDirectory = System.Environment.CurrentDirectory;
+            string filePath = Constant.JSON_FILE_NAME;
+            Console.WriteLine(currentDirectory);
+            System.IO.StreamWriter file = new System.IO.StreamWriter(filePath, false);
+            file.Write(text);
+            file.Close();
+            file.Dispose();
+        }
+
+        // load
+        public void Load()
+        {
+
+        }
+
         // 取得 cursor point left
         private double GetCursorPointData(double resizeData, double cursorData)
         {

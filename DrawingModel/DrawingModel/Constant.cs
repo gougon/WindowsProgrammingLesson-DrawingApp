@@ -10,8 +10,13 @@ namespace DrawingModel
     {
         public const string SPACE = " ";
         public const string COMMA = ",";
-        public const string LEFT_BRACKET = "(";
-        public const string RIGHT_BRACKET = ")";
+        public const string TAB = "    ";
+        public const string CHANGE_LINE = "\n";
+        public const string LEFT_SMALL_BRACKET = "(";
+        public const string RIGHT_SMALL_BRACKET = ")";
+        public const string LEFT_MIDDLE_BRACKET = "[";
+        public const string RIGHT_MIDDLE_BRACKET = "]";
+        public const string JSON_FILE_NAME = "shapesInformation.json";
         public const string LINE_TEXT = "Line";
         public const string RECTANGLE_TEXT = "Rectangle";
         public const string SIX_SIDE_TEXT = "Hexagon";

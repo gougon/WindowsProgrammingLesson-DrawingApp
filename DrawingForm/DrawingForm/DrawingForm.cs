@@ -39,6 +39,8 @@ namespace DrawingForm
             _sixSideButton.Click += HandleSixSideButtonClick;
             _redoMenuItem.Click += HandleRedoButtonClick;
             _undoMenuItem.Click += HandleUndoButtonClick;
+            _saveMenuItem.Click += HandleSaveButtonClick;
+            _loadMenuItem.Click += HandleLoadButtonClick;
 
             // 設定 model
             _model = new Model();
@@ -105,6 +107,18 @@ namespace DrawingForm
         private void HandleUndoButtonClick(object sender, EventArgs e)
         {
             _model.Undo();
+        }
+
+        // 按下 save button 的 click event
+        private void HandleSaveButtonClick(object sender, EventArgs e)
+        {
+            _model.Save();
+        }
+
+        // 按下 load button 的 click event
+        private void HandleLoadButtonClick(object sender, EventArgs e)
+        {
+            _model.Load();
         }
 
         // model observer

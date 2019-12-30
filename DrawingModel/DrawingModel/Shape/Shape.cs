@@ -69,17 +69,17 @@ namespace DrawingModel
         {
             get
             {
-                string information = (GetShapeText(this.ShapeType) + Constant.SPACE + Constant.LEFT_BRACKET);
+                string information = (GetShapeText(this.ShapeType) + Constant.SPACE + Constant.LEFT_SMALL_BRACKET);
                 information += (UpperLeftPoint.Left + Constant.COMMA + Constant.SPACE);
                 information += (UpperLeftPoint.Top + Constant.COMMA + Constant.SPACE);
                 information += (UpperLeftPoint.GetLeftDifference(LowerRightPoint) + Constant.COMMA + Constant.SPACE);
-                information += (UpperLeftPoint.GetTopDifference(LowerRightPoint) + Constant.RIGHT_BRACKET);
+                information += (UpperLeftPoint.GetTopDifference(LowerRightPoint) + Constant.RIGHT_SMALL_BRACKET);
                 return information;
             }
         }
 
         // 取得 ShapeType 對應的文字
-        private string GetShapeText(ShapeType shapeType)
+        public string GetShapeText(ShapeType shapeType)
         {
             switch (shapeType)
             {
