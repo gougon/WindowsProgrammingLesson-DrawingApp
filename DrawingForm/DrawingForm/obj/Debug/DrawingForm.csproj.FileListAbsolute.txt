@@ -25,11 +25,9 @@ E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\D
 E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.exe
 E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.pdb
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\Google.Apis.Auth.dll
-E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\Google.Apis.Auth.PlatformServices.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\Google.Apis.Core.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\Google.Apis.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\Google.Apis.Drive.v2.dll
-E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\Google.Apis.PlatformServices.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\Newtonsoft.Json.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\System.Text.Json.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\System.Memory.dll
@@ -60,3 +58,4 @@ E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\System.Buffers.xml
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\clientSecret.json

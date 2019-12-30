@@ -12,6 +12,8 @@ namespace DrawingModel
         public delegate void ModelChangedEventHandler();
         public event ModelChangedEventHandler _modelChanged;
 
+        private GoogleDriveHelper _serviceHelper;
+
         private State _state;
         private CommandManager _commandManager = new CommandManager();
 
@@ -22,6 +24,7 @@ namespace DrawingModel
         // Constructor
         public Model()
         {
+            _serviceHelper = new GoogleDriveHelper();
             _state = new StateFactory().CreateState(StateType.Pointer, this, _shapes);
         }
 
@@ -105,20 +108,13 @@ namespace DrawingModel
         // save
         public void Save()
         {
-            string text = new ShapesConverter(_shapes).Text;
-            string currentDirectory = System.Environment.CurrentDirectory;
-            string filePath = Constant.JSON_FILE_NAME;
-            Console.WriteLine(currentDirectory);
-            System.IO.StreamWriter file = new System.IO.StreamWriter(filePath, false);
-            file.Write(text);
-            file.Close();
-            file.Dispose();
+            _serviceHelper.Save(_shapes);
         }
 
         // load
         public void Load()
         {
-
+            _serviceHelper.Load(_shapes);
         }
 
         // 取得 cursor point left

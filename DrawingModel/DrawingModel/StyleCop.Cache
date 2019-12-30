@@ -97,12 +97,24 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/30 18:29:00.891</sourceFile>
+      <sourceFile>2019/12/30 18:35:06.986</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
     </timestamps>
-    <violations />
+    <violations>
+      <violation namespace="KellyPalRules.KellyPalAnalyzer" rule="UnsuitableNaming" ruleCheckId="UN0001">
+        <context>Unsuitable naming(名不符實)-JSON_FILE_NAME(json)</context>
+        <line>19</line>
+        <index>592</index>
+        <endIndex>653</endIndex>
+        <startLine>19</startLine>
+        <startColumn>9</startColumn>
+        <endLine>19</endLine>
+        <endColumn>70</endColumn>
+        <warning>False</warning>
+      </violation>
+    </violations>
   </sourcecode>
   <sourcecode name="IGraphics.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
@@ -119,24 +131,12 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/30 18:28:23.482</sourceFile>
+      <sourceFile>2019/12/30 18:44:29.222</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
     </timestamps>
-    <violations>
-      <violation namespace="KellyPalRules.KellyPalAnalyzer" rule="SpacingAndNewLine17" ruleCheckId="SN0017">
-        <context>ICS(空白與空行-17)</context>
-        <line>108</line>
-        <index>2979</index>
-        <endIndex>2980</endIndex>
-        <startLine>108</startLine>
-        <startColumn>1</startColumn>
-        <endLine>108</endLine>
-        <endColumn>2</endColumn>
-        <warning>False</warning>
-      </violation>
-    </violations>
+    <violations />
   </sourcecode>
   <sourcecode name="Point.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
@@ -219,7 +219,7 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/30 18:11:46.729</sourceFile>
+      <sourceFile>2019/12/30 18:42:12.471</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>

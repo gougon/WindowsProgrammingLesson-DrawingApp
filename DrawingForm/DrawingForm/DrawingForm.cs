@@ -112,7 +112,16 @@ namespace DrawingForm
         // 按下 save button 的 click event
         private void HandleSaveButtonClick(object sender, EventArgs e)
         {
-            _model.Save();
+            if (CheckWhetherSaveOrNot())
+            {
+                _model.Save();
+            }
+        }
+
+        // 確認是否要儲存
+        private bool CheckWhetherSaveOrNot()
+        {
+            return MessageBox.Show(Constant.CHECK_SAVE_MESSAGE) == DialogResult.OK;
         }
 
         // 按下 load button 的 click event
