@@ -9,6 +9,7 @@ namespace DrawingModel
     public class PointerState : State
     {
         Shape _selectShape = null;
+        Point _originPoint = null;
         bool _isInResizeState = false;
 
         // Constructor
@@ -49,42 +50,17 @@ namespace DrawingModel
             if (_isPressed && left > 0 && top > 0)
             {
                 Point cursorPoint = new Point(left, top);
-                HandleResize(cursorPoint);
+                HandleResize(_selectShape, cursorPoint);
                 HandleModelChanged();
             }
         }
 
         // 處理 resize
-        private void HandleResize(Point cursorPoint)
+        private void HandleResize(Shape selectShape, Point cursorPoint)
         {
             if (_isInResizeState)
             {
-                ResizeShape(_selectShape, cursorPoint);
-            }
-        }
-
-        // resize
-        private void ResizeShape(Shape resizeShape, Point cursorPoint)
-        {
-            double resizeLeft = resizeShape.Left;
-            double resizeTop = resizeShape.Top;
-            double cursorLeft = cursorPoint.Left;
-            double cursorTop = cursorPoint.Top;
-            cursorPoint.Left = GetCursorPointData(resizeLeft, cursorLeft);
-            cursorPoint.Top = GetCursorPointData(resizeTop, cursorTop);
-            resizeShape.SetEndPoint(cursorPoint.Left, cursorPoint.Top);
-        }
-
-        // 取得 cursor point left
-        private double GetCursorPointData(double resizeData, double cursorData)
-        {
-            if (resizeData < cursorData)
-            {
-                return cursorData;
-            }
-            else
-            {
-                return resizeData;
+                _model.Resize(selectShape, cursorPoint);
             }
         }
 
@@ -96,6 +72,7 @@ namespace DrawingModel
                 _isPressed = false;
                 if (_isInResizeState)
                 {
+                    commandManager.Execute(new ResizeCommand(_model, _selectShape, _originPoint, new Point(left, top)));
                     _isInResizeState = false;
                 }
                 HandleModelChanged();
@@ -126,6 +103,10 @@ namespace DrawingModel
             double top = _startPoint.Top;
             int shapeQuantity = _shapes.Count;
             _selectShape = FindSelectShape(shapeQuantity, left, top);
+            if (_selectShape != null)
+            {
+                _originPoint = _selectShape.EndPoint.Clone;
+            }
         }
 
         // 找到 select shape

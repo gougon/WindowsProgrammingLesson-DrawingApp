@@ -11,3 +11,16 @@ E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.csproj.CopyComplete
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.exe
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.pdb
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\DrawingForm.exe.config
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\DrawingForm.exe
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\DrawingForm.pdb
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\DrawingModel.dll
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\DrawingModel.pdb
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.csprojAssemblyReference.cache
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.DrawingForm.resources
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.Properties.Resources.resources
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.csproj.GenerateResource.cache
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.csproj.CoreCompileInputs.cache
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.csproj.CopyComplete
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.exe
+E:\Study\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.pdb
