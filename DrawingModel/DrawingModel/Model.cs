@@ -12,6 +12,8 @@ namespace DrawingModel
         public delegate void ModelChangedEventHandler();
         public event ModelChangedEventHandler _modelChanged;
 
+        private GoogleDriveHelper _serviceHelper;
+
         private State _state;
         private CommandManager _commandManager = new CommandManager();
 
@@ -22,6 +24,7 @@ namespace DrawingModel
         // Constructor
         public Model()
         {
+            _serviceHelper = new GoogleDriveHelper();
             _state = new StateFactory().CreateState(StateType.Pointer, this, _shapes);
         }
 
@@ -100,6 +103,19 @@ namespace DrawingModel
             cursorPoint.Left = GetCursorPointData(resizeLeft, cursorLeft);
             cursorPoint.Top = GetCursorPointData(resizeTop, cursorTop);
             resizeShape.SetEndPoint(cursorPoint.Left, cursorPoint.Top);
+        }
+
+        // save
+        public void Save()
+        {
+            _serviceHelper.Save(_shapes);
+        }
+
+        // load
+        public void Load()
+        {
+            _serviceHelper.Load(_shapes);
+            NotifyModelChanged();
         }
 
         // 取得 cursor point left

@@ -37,6 +37,8 @@
             this._menuStrip = new System.Windows.Forms.MenuStrip();
             this._undoMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._redoMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._saveMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this._loadMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._buttonLayout.SuspendLayout();
             this._menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -121,7 +123,9 @@
             // 
             this._menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._undoMenuItem,
-            this._redoMenuItem});
+            this._redoMenuItem,
+            this._saveMenuItem,
+            this._loadMenuItem});
             this._menuStrip.Location = new System.Drawing.Point(0, 0);
             this._menuStrip.Name = "_menuStrip";
             this._menuStrip.Size = new System.Drawing.Size(717, 24);
@@ -141,6 +145,18 @@
             this._redoMenuItem.Name = "_redoMenuItem";
             this._redoMenuItem.Size = new System.Drawing.Size(50, 20);
             this._redoMenuItem.Text = "Redo";
+            // 
+            // _saveMenuItem
+            // 
+            this._saveMenuItem.Name = "_saveMenuItem";
+            this._saveMenuItem.Size = new System.Drawing.Size(46, 20);
+            this._saveMenuItem.Text = "Save";
+            // 
+            // _loadMenuItem
+            // 
+            this._loadMenuItem.Name = "_loadMenuItem";
+            this._loadMenuItem.Size = new System.Drawing.Size(48, 20);
+            this._loadMenuItem.Text = "Load";
             // 
             // DrawingForm
             // 
@@ -172,6 +188,8 @@
         private System.Windows.Forms.MenuStrip _menuStrip;
         private System.Windows.Forms.ToolStripMenuItem _undoMenuItem;
         private System.Windows.Forms.ToolStripMenuItem _redoMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem _saveMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem _loadMenuItem;
     }
 }
 

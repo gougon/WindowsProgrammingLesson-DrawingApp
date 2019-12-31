@@ -188,6 +188,22 @@
           <Reviews>
             <Smell>
               <Id>1</Id>
+              <SmellType>Unresolved warnings(忽視警告)-在 "System.Net.Http" 的不同版本間發現衝突，但無法解決。當記錄詳細資訊設定為 [詳細] 時，這些參考衝突會列在組建記錄檔中。</SmellType>
+              <HashCode>DrawingForm\DrawingForm\DrawingForm..Unresolved warnings(忽視警告)-在 "System.Net.Http" 的不同版本間發現衝突，但無法解決。當記錄詳細資訊設定為 [詳細] 時，這些參考衝突會列在組建記錄檔中。.0</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingForm\DrawingForm\DrawingForm</Project>
+              <File />
+              <Line>0</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment />
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>2</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>54 DrawingApp.MainPage.UnloadObject(Windows.UI.Xaml.DependencyObject)</HashCode>
               <Severity>Red</Severity>
@@ -203,7 +219,39 @@
               <Auto>false</Auto>
             </Smell>
             <Smell>
-              <Id>2</Id>
+              <Id>3</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>129 DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByType(System.Type)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>XamlTypeInfo.g.cs</File>
+              <Line>129</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByType(System.Type)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>4</Id>
+              <SmellType>Lack of comments(缺乏註解)</SmellType>
+              <HashCode>134 DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByName(string)</HashCode>
+              <Severity>Red</Severity>
+              <Weight>1</Weight>
+              <Project>DrawingApp</Project>
+              <File>XamlTypeInfo.g.cs</File>
+              <Line>134</Line>
+              <StartLine>0</StartLine>
+              <StartCol>0</StartCol>
+              <EndLine>0</EndLine>
+              <EndCol>0</EndCol>
+              <Comment>DrawingApp.DrawingApp_XamlTypeInfo.XamlTypeInfoProvider.GetXamlTypeByName(string)</Comment>
+              <Auto>false</Auto>
+            </Smell>
+            <Smell>
+              <Id>5</Id>
               <SmellType>Lack of comments(缺乏註解)</SmellType>
               <HashCode>20 DrawingApp.Program.Main(string[])</HashCode>
               <Severity>Red</Severity>
@@ -419,6 +467,26 @@
                 <AnalysisFileType>Model</AnalysisFileType>
               </AnalysisFile>
               <AnalysisFile>
+                <RelativePath>GoogleDrive\GoogleDriveHelper.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>GoogleDrive\GoogleDriveService.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Test</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>GoogleDrive\ShapeFormat.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
+                <RelativePath>GoogleDrive\ShapesConverter.cs</RelativePath>
+                <ProjectName>DrawingModel</ProjectName>
+                <AnalysisFileType>Model</AnalysisFileType>
+              </AnalysisFile>
+              <AnalysisFile>
                 <RelativePath>IGraphics.cs</RelativePath>
                 <ProjectName>DrawingModel</ProjectName>
                 <AnalysisFileType>Model</AnalysisFileType>
@@ -590,8 +658,8 @@
               </AnalysisFile>
             </AnalysisFiles>
           </AnalysisFileManager>
-          <ProductionLoc>3695</ProductionLoc>
-          <TestLoc>2236</TestLoc>
+          <ProductionLoc>4042</ProductionLoc>
+          <TestLoc>2501</TestLoc>
         </CodeReview>
       </Data>
     </div>

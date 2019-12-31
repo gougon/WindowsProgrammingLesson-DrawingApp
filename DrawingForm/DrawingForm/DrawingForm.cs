@@ -39,6 +39,8 @@ namespace DrawingForm
             _sixSideButton.Click += HandleSixSideButtonClick;
             _redoMenuItem.Click += HandleRedoButtonClick;
             _undoMenuItem.Click += HandleUndoButtonClick;
+            _saveMenuItem.Click += HandleSaveButtonClick;
+            _loadMenuItem.Click += HandleLoadButtonClick;
 
             // 設定 model
             _model = new Model();
@@ -105,6 +107,42 @@ namespace DrawingForm
         private void HandleUndoButtonClick(object sender, EventArgs e)
         {
             _model.Undo();
+        }
+
+        // 按下 save button 的 click event
+        private void HandleSaveButtonClick(object sender, EventArgs e)
+        {
+            if (IsSaveOrNot())
+            {
+                Task task = Task.Factory.StartNew(SaveShapes);
+            }
+        }
+
+        // 確認是否要儲存
+        private bool IsSaveOrNot()
+        {
+            return MessageBox.Show(Constant.CHECK_SAVE_MESSAGE) == DialogResult.OK;
+        }
+
+        // run model save
+        private void SaveShapes()
+        {
+            _model.Save();
+        }
+
+        // 按下 load button 的 click event
+        private void HandleLoadButtonClick(object sender, EventArgs e)
+        {
+            if (IsLoadOrNot())
+            {
+                _model.Load();
+            }
+        }
+
+        // 確認是否要讀取
+        private bool IsLoadOrNot()
+        {
+            return MessageBox.Show(Constant.CHECK_LOAD_MESSAGE) == DialogResult.OK;
         }
 
         // model observer
