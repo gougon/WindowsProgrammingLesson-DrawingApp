@@ -107,7 +107,6 @@ E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingMode
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.Xml.XPath.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.Xml.XPath.XDocument.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\Newtonsoft.Json.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.Buffers.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.Memory.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.Numerics.Vectors.dll
@@ -117,7 +116,6 @@ E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingMode
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.Threading.Tasks.Extensions.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.ValueTuple.dll
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\Newtonsoft.Json.xml
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.Buffers.xml
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.Memory.xml
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingModel\DrawingModel\bin\Debug\System.Numerics.Vectors.xml

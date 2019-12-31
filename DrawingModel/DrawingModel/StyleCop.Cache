@@ -97,24 +97,56 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/30 18:35:06.986</sourceFile>
+      <sourceFile>2019/12/30 23:56:37.858</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
     </timestamps>
-    <violations>
-      <violation namespace="KellyPalRules.KellyPalAnalyzer" rule="UnsuitableNaming" ruleCheckId="UN0001">
-        <context>Unsuitable naming(名不符實)-JSON_FILE_NAME(json)</context>
-        <line>19</line>
-        <index>592</index>
-        <endIndex>653</endIndex>
-        <startLine>19</startLine>
-        <startColumn>9</startColumn>
-        <endLine>19</endLine>
-        <endColumn>70</endColumn>
-        <warning>False</warning>
-      </violation>
-    </violations>
+    <violations />
+  </sourcecode>
+  <sourcecode name="GoogleDriveHelper.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 17:27:09.373</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="GoogleDriveService.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 17:22:40.253</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ShapeFormat.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 17:06:01.191</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ShapesConverter.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 17:09:34.293</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
   </sourcecode>
   <sourcecode name="IGraphics.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
@@ -131,7 +163,7 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/30 18:44:29.222</sourceFile>
+      <sourceFile>2019/12/31 17:10:07.726</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
@@ -186,7 +218,7 @@
     <timestamps>
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/30 18:14:18.016</sourceFile>
+      <sourceFile>2019/12/30 21:57:38.924</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
@@ -209,28 +241,6 @@
       <styleCop>2019/09/20 00:03:17.348</styleCop>
       <settingsFile>0001/01/01 00:00:00.000</settingsFile>
       <sourceFile>2019/12/30 17:16:57.204</sourceFile>
-      <parser>2019/09/20 00:03:17.348</parser>
-      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
-      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="ShapeFormat.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2019/09/20 00:03:17.348</styleCop>
-      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/30 18:42:12.471</sourceFile>
-      <parser>2019/09/20 00:03:17.348</parser>
-      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
-      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
-    </timestamps>
-    <violations />
-  </sourcecode>
-  <sourcecode name="ShapesConverter.cs" parser="StyleCop.CSharp.CsParser">
-    <timestamps>
-      <styleCop>2019/09/20 00:03:17.348</styleCop>
-      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
-      <sourceFile>2019/12/30 18:29:21.873</sourceFile>
       <parser>2019/09/20 00:03:17.348</parser>
       <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
       <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>

@@ -112,14 +112,14 @@ namespace DrawingForm
         // 按下 save button 的 click event
         private void HandleSaveButtonClick(object sender, EventArgs e)
         {
-            if (CheckWhetherSaveOrNot())
+            if (IsSaveOrNot())
             {
                 _model.Save();
             }
         }
 
         // 確認是否要儲存
-        private bool CheckWhetherSaveOrNot()
+        private bool IsSaveOrNot()
         {
             return MessageBox.Show(Constant.CHECK_SAVE_MESSAGE) == DialogResult.OK;
         }
@@ -127,7 +127,16 @@ namespace DrawingForm
         // 按下 load button 的 click event
         private void HandleLoadButtonClick(object sender, EventArgs e)
         {
-            _model.Load();
+            if (IsLoadOrNot())
+            {
+                _model.Load();
+            }
+        }
+
+        // 確認是否要讀取
+        private bool IsLoadOrNot()
+        {
+            return MessageBox.Show(Constant.CHECK_LOAD_MESSAGE) == DialogResult.OK;
         }
 
         // model observer

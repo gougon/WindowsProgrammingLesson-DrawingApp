@@ -59,3 +59,5 @@ E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\System.Buffers.xml
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\clientSecret.json
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\bin\Debug\System.Net.Http.dll
+E:\Study\視窗程式設計(MVC)\WindowsProgrammingLesson-DrawingApp\DrawingForm\DrawingForm\obj\Debug\DrawingForm.exe.config

@@ -115,6 +115,7 @@ namespace DrawingModel
         public void Load()
         {
             _serviceHelper.Load(_shapes);
+            NotifyModelChanged();
         }
 
         // 取得 cursor point left

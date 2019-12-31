@@ -14,6 +14,11 @@ namespace DrawingModel
         double _endPointTop;
         int _shapeType;
 
+        public ShapeFormat()
+        {
+            // do nothing
+        }
+
         public ShapeFormat(Point startPoint, Point endPoint, ShapeType shapeType)
         {
             _startPointLeft = startPoint.Left;
@@ -23,11 +28,24 @@ namespace DrawingModel
             _shapeType = (int)shapeType;
         }
 
+        public ShapeFormat(double startPointLeft, double startPointTop, double endPointLeft, double endPointTop, int shapeType)
+        {
+            _startPointLeft = startPointLeft;
+            _startPointTop = startPointTop;
+            _endPointLeft = endPointLeft;
+            _endPointTop = endPointTop;
+            _shapeType = shapeType;
+        }
+
         public double StartPointLeft
         {
             get
             {
                 return _startPointLeft;
+            }
+            set
+            {
+                _startPointLeft = value;
             }
         }
 
@@ -37,6 +55,10 @@ namespace DrawingModel
             {
                 return _startPointTop;
             }
+            set
+            {
+                _startPointTop = value;
+            }
         }
 
         public double EndPointLeft
@@ -44,6 +66,10 @@ namespace DrawingModel
             get
             {
                 return _endPointLeft;
+            }
+            set
+            {
+                _endPointLeft = value;
             }
         }
 
@@ -53,6 +79,10 @@ namespace DrawingModel
             {
                 return _endPointTop;
             }
+            set
+            {
+                _endPointTop = value;
+            }
         }
 
         public int ShapeType
@@ -60,6 +90,10 @@ namespace DrawingModel
             get
             {
                 return _shapeType;
+            }
+            set
+            {
+                _shapeType = value;
             }
         }
     }

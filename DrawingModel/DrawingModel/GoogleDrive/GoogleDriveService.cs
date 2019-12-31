@@ -14,7 +14,6 @@ using Google.Apis.Download;
 using Google.Apis.Drive.v2.Data;
 using System.Net;
 
-
 namespace DrawingModel
 {
     class GoogleDriveService
@@ -55,10 +54,9 @@ namespace DrawingModel
             }
 
             DriveService service = new DriveService(new BaseClientService.Initializer()
-            {
+            { 
                 HttpClientInitializer = credential,
-                ApplicationName = applicationName
-            });
+                ApplicationName = applicationName });
 
             _credential = credential;
             DateTime now = DateTime.Now;
@@ -158,7 +156,7 @@ namespace DrawingModel
 
             Google.Apis.Drive.v2.Data.File fileToInsert = new Google.Apis.Drive.v2.Data.File { Title = title };
             FilesResource.InsertMediaUpload insertRequest = _service.Files.Insert(fileToInsert, uploadStream, contentType);
-            insertRequest.ChunkSize = FilesResource.InsertMediaUpload.MinimumChunkSize * 2;
+            insertRequest.ChunkSize = FilesResource.InsertMediaUpload.MinimumChunkSize * Constant.TWO;
 
             if (uploadProgressEventHandeler != null)
                 insertRequest.ProgressChanged += uploadProgressEventHandeler;
@@ -224,6 +222,15 @@ namespace DrawingModel
             catch (Exception exception)
             {
                 throw exception;
+            }
+        }
+
+        // 刪除重複 file
+        public void DeleteDuplicatedFile(Google.Apis.Drive.v2.Data.File file, string fileName)
+        {
+            if (file.Title == fileName)
+            {
+                DeleteFile(file.Id);
             }
         }
 

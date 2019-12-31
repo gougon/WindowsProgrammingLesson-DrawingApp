@@ -1,4 +1,23 @@
 [
-    {"StartPointLeft":143,"StartPointTop":141,"EndPointLeft":415,"EndPointTop":349,"ShapeType":1},
-    {"StartPointLeft":389,"StartPointTop":147,"EndPointLeft":506,"EndPointTop":316,"ShapeType":2}
+  {
+    "StartPointLeft": 222,
+    "StartPointTop": 155,
+    "EndPointLeft": 320,
+    "EndPointTop": 305,
+    "ShapeType": 0
+  },
+  {
+    "StartPointLeft": 367,
+    "StartPointTop": 151,
+    "EndPointLeft": 508,
+    "EndPointTop": 302,
+    "ShapeType": 2
+  },
+  {
+    "StartPointLeft": 111,
+    "StartPointTop": 175,
+    "EndPointLeft": 248,
+    "EndPointTop": 265,
+    "ShapeType": 1
+  }
 ]

@@ -13,7 +13,7 @@ namespace DrawingModel
         SixSide
     };
 
-    public abstract class Shape
+    public abstract class Shape : ICloneable
     {
         protected bool _isReverse = false;
         protected Point _startPoint;
@@ -90,6 +90,15 @@ namespace DrawingModel
                 default:
                     return Constant.SIX_SIDE_TEXT;
             }
+        }
+
+        // 複製
+        public object Clone()
+        {
+            Shape shape = new ShapeFactory().CreateShape(_shapeType);
+            shape.SetStartPoint(_startPoint.Left, _startPoint.Top);
+            shape.SetEndPoint(_endPoint.Left, _endPoint.Top);
+            return shape;
         }
 
         // 取得 startPoint
