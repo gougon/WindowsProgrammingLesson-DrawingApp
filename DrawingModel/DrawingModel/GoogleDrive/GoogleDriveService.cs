@@ -54,9 +54,10 @@ namespace DrawingModel
             }
 
             DriveService service = new DriveService(new BaseClientService.Initializer()
-            { 
+            {
                 HttpClientInitializer = credential,
-                ApplicationName = applicationName });
+                ApplicationName = applicationName
+            });
 
             _credential = credential;
             DateTime now = DateTime.Now;
@@ -231,34 +232,6 @@ namespace DrawingModel
             if (file.Title == fileName)
             {
                 DeleteFile(file.Id);
-            }
-        }
-
-        /// <summary>
-        /// 更新指定FileID的檔案
-        /// </summary>
-        /// <param name="fileName">欲上傳至Google Drive並覆蓋在Google Drive上舊版檔案的檔案位置 </param>
-        /// <param name="fileId">存在於Google Drive 舊版檔案的FileID </param>
-        /// <param name="contentType">MIME Type</param>
-        /// <returns>如更新成功，回傳更新後的Google Drive File</returns>
-        public Google.Apis.Drive.v2.Data.File UpdateFile(string fileName, string fileId, string contentType)
-        {
-            CheckCredentialTimeStamp();
-            try
-            {
-                Google.Apis.Drive.v2.Data.File file = _service.Files.Get(fileId).Execute();
-                byte[] byteArray = System.IO.File.ReadAllBytes(fileName);
-                MemoryStream stream = new MemoryStream(byteArray);
-                FilesResource.UpdateMediaUpload request = _service.Files.Update(file, fileId, stream, contentType);
-                request.NewRevision = true;
-                request.Upload();
-
-                Google.Apis.Drive.v2.Data.File updatedFile = request.ResponseBody;
-                return updatedFile;
-            }
-            catch (Exception exception)
-            {
-                throw exception;
             }
         }
     }

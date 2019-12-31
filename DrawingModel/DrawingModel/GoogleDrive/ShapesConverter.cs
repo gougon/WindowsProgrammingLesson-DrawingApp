@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace DrawingModel
 {
-    class ShapesConverter
+    public class ShapesConverter
     {
         string _text;
         List<Shape> _shapes;
@@ -21,9 +21,7 @@ namespace DrawingModel
                 ShapeFormat shapeText = new ShapeFormat(shape.StartPoint, shape.EndPoint, shape.ShapeType);
                 shapeFormats.Add(shapeText);
             }
-            JsonSerializerOptions options = new JsonSerializerOptions();
-            options.WriteIndented = true;
-            _text = JsonSerializer.Serialize<List<ShapeFormat>>(shapeFormats, options);
+            _text = JsonSerializer.Serialize<List<ShapeFormat>>(shapeFormats);
         }
 
         // 將 json 字串轉為 shapes

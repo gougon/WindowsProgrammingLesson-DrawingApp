@@ -28,15 +28,6 @@ namespace DrawingModel
             _shapeType = (int)shapeType;
         }
 
-        public ShapeFormat(double startPointLeft, double startPointTop, double endPointLeft, double endPointTop, int shapeType)
-        {
-            _startPointLeft = startPointLeft;
-            _startPointTop = startPointTop;
-            _endPointLeft = endPointLeft;
-            _endPointTop = endPointTop;
-            _shapeType = shapeType;
-        }
-
         public double StartPointLeft
         {
             get

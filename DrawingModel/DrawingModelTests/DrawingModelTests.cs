@@ -153,6 +153,21 @@ namespace DrawingModel.Tests
             Assert.AreEqual(false, _model.IsRedoEnable);
         }
 
+        // 測試 save
+        [TestMethod()]
+        public void SaveTest()
+        {
+            _model.Save();
+            _model.Save();
+        }
+
+        // 測試 load
+        [TestMethod()]
+        public void LoadTest()
+        {
+            _model.Load();
+        }
+
         // 測試 draw
         [TestMethod()]
         public void DrawTest()

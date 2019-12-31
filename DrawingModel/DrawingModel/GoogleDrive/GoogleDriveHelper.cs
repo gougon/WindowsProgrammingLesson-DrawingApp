@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DrawingModel
 {
-    class GoogleDriveHelper
+    public class GoogleDriveHelper
     {
         private GoogleDriveService _service;
 

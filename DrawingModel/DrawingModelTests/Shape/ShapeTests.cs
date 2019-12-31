@@ -77,6 +77,17 @@ namespace DrawingModel.Tests
             Assert.AreEqual("Hexagon (1, 1, 9, 9)", _shape.Information);
         }
 
+        // 測試 Clone
+        [TestMethod()]
+        public void CloneTest()
+        {
+            Shape cloneShape = _shape.Clone() as Shape;
+            Assert.AreEqual(true, cloneShape != _shape);
+            Assert.AreEqual(cloneShape.ShapeType, _shape.ShapeType);
+            Assert.AreEqual(true, _shape.StartPoint.IsEqual(cloneShape.StartPoint));
+            Assert.AreEqual(true, _shape.EndPoint.IsEqual(cloneShape.EndPoint));
+        }
+
         // 測試 StartPoint
         [TestMethod()]
         public void StartPointTest()
