@@ -1,23 +1,30 @@
 [
   {
-    "StartPointLeft": 222,
-    "StartPointTop": 155,
-    "EndPointLeft": 320,
-    "EndPointTop": 305,
+    "StartPointLeft": 135,
+    "StartPointTop": 109,
+    "EndPointLeft": 275,
+    "EndPointTop": 222,
+    "ShapeType": 1
+  },
+  {
+    "StartPointLeft": 420,
+    "StartPointTop": 128,
+    "EndPointLeft": 435,
+    "EndPointTop": 254,
     "ShapeType": 0
   },
   {
-    "StartPointLeft": 367,
-    "StartPointTop": 151,
-    "EndPointLeft": 508,
-    "EndPointTop": 302,
+    "StartPointLeft": 532,
+    "StartPointTop": 162,
+    "EndPointLeft": 605,
+    "EndPointTop": 291,
     "ShapeType": 2
   },
   {
-    "StartPointLeft": 111,
-    "StartPointTop": 175,
-    "EndPointLeft": 248,
-    "EndPointTop": 265,
-    "ShapeType": 1
+    "StartPointLeft": 254,
+    "StartPointTop": 200,
+    "EndPointLeft": 357,
+    "EndPointTop": 323,
+    "ShapeType": 2
   }
 ]

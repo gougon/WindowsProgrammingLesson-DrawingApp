@@ -114,7 +114,7 @@ namespace DrawingForm
         {
             if (IsSaveOrNot())
             {
-                _model.Save();
+                Task task = Task.Factory.StartNew(SaveShapes);
             }
         }
 
@@ -122,6 +122,12 @@ namespace DrawingForm
         private bool IsSaveOrNot()
         {
             return MessageBox.Show(Constant.CHECK_SAVE_MESSAGE) == DialogResult.OK;
+        }
+
+        // run model save
+        private void SaveShapes()
+        {
+            _model.Save();
         }
 
         // 按下 load button 的 click event
