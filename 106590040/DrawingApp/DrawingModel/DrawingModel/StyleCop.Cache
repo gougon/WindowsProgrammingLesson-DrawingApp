@@ -1,0 +1,297 @@
+<stylecopresultscache>
+  <version>12</version>
+  <project key="-1157638913">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="-43127790">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="501585673">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="713139800">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="ShapeJsonFormat.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/30 18:08:13.298</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="KellyPalRules.KellyPalAnalyzer" rule="UnsuitableNaming" ruleCheckId="UN0001">
+        <context>Unsuitable naming(名不符實)-ShapeJsonFormat(json)</context>
+        <line>9</line>
+        <index>154</index>
+        <endIndex>1454</endIndex>
+        <startLine>9</startLine>
+        <startColumn>5</startColumn>
+        <endLine>65</endLine>
+        <endColumn>5</endColumn>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <project key="-1561090613">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="1951466063">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="ClearCommand.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.507</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="CommandManager.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.507</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="DrawCommand.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.507</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ICommand.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.507</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ResizeCommand.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.507</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Constant.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.507</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="GoogleDriveHelper.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.508</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="GoogleDriveService.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.508</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ShapeFormat.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2020/01/07 21:51:21.735</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ShapesConverter.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2020/01/07 22:02:39.231</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IGraphics.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.509</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Model.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.510</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Point.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.510</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.510</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Line.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.510</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Rectangle.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.511</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Shape.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2020/01/07 22:07:08.544</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ShapeFactory.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.511</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="SixSide.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.511</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="DrawingState.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.511</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="PointerState.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.512</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="State.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.512</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="StateFactory.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.512</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+</stylecopresultscache>

@@ -1,0 +1,76 @@
+<stylecopresultscache>
+  <version>12</version>
+  <project key="286569809">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="929418980">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="-1996986227">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="1716032223">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="DrawingStateTests.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/16 21:43:22.862</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="PointerStateTests.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/16 21:42:27.224</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <project key="936349067">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <project key="858630594">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="MockGraphics.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.372</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="DrawingFormPresentationModelTests.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.372</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2019/09/20 00:03:17.348</styleCop>
+      <settingsFile>0001/01/01 00:00:00.000</settingsFile>
+      <sourceFile>2019/12/31 22:36:19.373</sourceFile>
+      <parser>2019/09/20 00:03:17.348</parser>
+      <KellyPalRules.KellyPalAnalyzer>2019/09/20 00:03:17.348</KellyPalRules.KellyPalAnalyzer>
+      <KellyPalRules.KellyPalAnalyzer.FilesHashCode>0</KellyPalRules.KellyPalAnalyzer.FilesHashCode>
+    </timestamps>
+    <violations />
+  </sourcecode>
+</stylecopresultscache>
