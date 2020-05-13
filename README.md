@@ -1,6 +1,6 @@
 # WindowsProgrammingLesson-DrawingApp
 **說明**<br>
-* 實作一個簡易的繪圖軟體(Windows Form / Windows App)
+實作一個簡易的繪圖軟體(Windows Form / Windows App)
 
 **目的**<br>
 練習Design Pattern
