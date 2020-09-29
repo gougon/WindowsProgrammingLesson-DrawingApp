@@ -13,7 +13,7 @@
 * 藉由google drive api，可以save目前的畫布，並且可以在之後load回來
 
 **Design Pattern**<br>
-* **MVC pattern**
+* **MVVM pattern**
   * View, PresentationModel, Model
 * **Adapter pattern**
   * 由於有Form及App，各自的圖形介面不同，因此使用Adapter pattern共用model
